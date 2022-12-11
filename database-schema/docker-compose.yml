@@ -7,5 +7,8 @@ services:
                         - 5432:5432
                 environment:
                         - POSTGRES_USER=crm
-                        - POSTGRESS_PASSWORD=crm
+                        - POSTGRES_PASSWORD=crm
                         - POSTGRES_DB=crm
+                volumes:
+                        - ./migration-scripts/V1/init_db.sh:/docker-entrypoint-initdb.d/init_db.sh
+                        - ./migration-scripts/V1/:/sql_scripts/ 
