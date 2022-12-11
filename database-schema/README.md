@@ -7,7 +7,7 @@
 2. `cd projectPractice/database-schema`
 3. `docker-compose up -d`
 
-##### Как присоединиться к базе в контейнере
+##### Как присоединиться к базе в контейнере:
 1. `docker exec -it <container_name> bash`
 2. `psql -U <db_user> -d <db_name>`
     - `\d` - посмотреть все таблицы
