@@ -1,0 +1,57 @@
+﻿@page "/new-order"
+
+<div class="window__container new-order__container">
+    <div class="window__upper">
+        <h2 class="auth__title">
+            Оставить заявку
+        </h2>
+    </div>
+    <div class="window__lower new-order__lower">
+        <p class="auth__lower-par">
+            Оставьте заявку, мы с вами свяжемся
+        </p>
+        <div class="form-group">
+            <label for="name">
+                Название
+            </label>
+            <input id="name" type="text" class="new-order__input" placeholder="Введите название заявки" />
+        </div>
+        <div class="form-group">
+            <label for="message">
+                Сообщение*
+            </label>
+            <input id="message" type="text" class="new-order__input" placeholder="Сообщение*" />
+        </div>
+        <div class="form-group">
+            <label for="dispatch">
+                Адрес отправления
+            </label>
+            <input id="dispatch" type="text" class="new-order__input" placeholder="Адрес отправления" />
+        </div>
+        <div class="form-group">
+            <label for="target">
+                Адрес прибытия
+            </label>
+            <input id="target" type="text" class="new-order__input" placeholder="Адрес прибытия" />
+        </div>
+        <div class="form-group">
+            <label for="weight">
+                Общий вес
+            </label>
+            <input id="weight" type="text" class="new-order__input" placeholder="Общий вес товара" />
+        </div>
+        <div class="form-group">
+            <label for="products">
+                Отправляемый товар
+            </label>
+            <input id="products" type="text" class="new-order__input" placeholder="Перечислите отправляемый товар" />
+        </div>
+        
+        <button class="new-order btn">Отправить</button>
+    </div>
+</div>
+
+
+@code {
+    
+}

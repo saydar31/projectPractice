@@ -1,4 +1,4 @@
-using frontend;
+using CRM_Project;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 

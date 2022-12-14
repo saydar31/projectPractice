@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\AuthPage.razor" />
+    <Content Remove="Pages\MyOrders.razor" />
+    <Content Remove="Pages\PageTitle.razor" />
+    <Content Remove="Pages\RegisterPage.razor" />
+    <Content Remove="Pages\RegPage.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.0" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\AuthPage.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\AuthPage.razor" />
+    <_ContentIncludedByDefault Remove="Pages\List.razor" />
+    <_ContentIncludedByDefault Remove="Pages\MyOrders.razor" />
+    <_ContentIncludedByDefault Remove="Pages\PageTitle.razor" />
+    <_ContentIncludedByDefault Remove="Pages\RegisterPage.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\MyOrders.razor" />
+    <None Include="Pages\PageTitle.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\PageTitle.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\RegisterPage.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\List.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\MyOrders.razor" />
+  </ItemGroup>
+
+</Project>

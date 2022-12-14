@@ -1,0 +1,25 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row left-side">
+                <NavLink class="nav-link" href="login">
+                    Авторизоваться
+                </NavLink>
+                <NavLink class="nav-link" href="register">
+                    Зарегистрироваться
+                </NavLink>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+@code {
+
+}

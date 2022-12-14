@@ -1,0 +1,56 @@
+﻿@page "/list"
+
+<h3>List</h3>
+<table class="table table-stripped">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">
+                id
+            </th>
+            <th scope="col">
+                Полное имя
+            </th>
+            <th scope="col">
+                Адрес отправления
+            </th>
+            <th scope="col">
+                Адрес прибытия
+            </th>
+            <th scope="col">
+                Общий вес
+            </th>
+            <th scope="col">
+                Товар
+            </th>
+        </tr>
+    </thead>
+    @foreach (var item in orders)
+    {
+        <tbody>
+            <tr>
+                <td>
+                    @item.CustomerId
+                </td>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.DispatchAdress
+                </td>
+                <td>
+                    @item.TargetAdress
+                </td>
+                <td>
+                    @item.Weight
+                </td>
+                <td>
+                    @item.SendingProduct
+                </td>
+            </tr>
+        </tbody>
+    }
+</table>
+
+@code {
+    public IList<Orders> orders = new List<Orders>();
+}
