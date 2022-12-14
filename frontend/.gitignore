@@ -257,6 +257,10 @@ ServiceFabricBackup/
 *.rptproj.rsuser
 *- Backup*.rdl
 
+.vs/
+bin/
+obj/
+
 # Microsoft Fakes
 FakesAssemblies/
 
