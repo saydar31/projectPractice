@@ -27,4 +27,4 @@
 3. `psql -U crm -d crm -f <sql_script>` - исполнить SQL скрипт из shell контейнера
 
 ## Актуальное состояние схемы
-![schema](schema-diagram.png)
+<img src="schema-diagram.png" alt="drawing" width="300"/>
